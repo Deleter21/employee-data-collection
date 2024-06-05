@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Data Collection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tab-content" id="home">
+            <h2>Home</h2>
+            <form id="employeeForm">
+                <label for="employeeId">Employee ID:</label>
+                <input type="text" id="employeeId" name="employeeId" required>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="certifications">Certifications:</label>
+                <input type="text" id="certifications" name="certifications">
+
+                <label for="certExpiry">Certification Expiry Date:</label>
+                <input type="date" id="certExpiry" name="certExpiry">
+
+                <label for="projectName">Project Name:</label>
+                <input type="text" id="projectName" name="projectName">
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="tab-content" id="data">
+            <h2>Data</h2>
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <th>Employee ID</th>
+                        <th>Name</th>
+                        <th>Date of Birth</th>
+                        <th>Certifications</th>
+                        <th>Certification Expiry</th>
+                        <th>Project Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div class="tab-content" id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, please contact us at <a href="mailto:support@example.com">support@example.com</a>.</p>
+        </div>
+    </div>
+    <div class="tabs">
+        <button class="tab-button" data-tab="home">Home</button>
+        <button class="tab-button" data-tab="data">Data</button>
+        <button class="tab-button" data-tab="contact">Contact Us</button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
